@@ -6,8 +6,12 @@ const withCss = require('@zeit/next-css')
 if (typeof require !== 'undefined') {
     require.extensions['.css'] = (file) => {}
 }
+const prod = process.env.NODE_ENV === 'production'
+const css = withCss()
 
 module.exports = {
+    assetPrefix: prod ? '/mai-te-rang' : '',
+    'process.env.BACKEND_URL': prod? '/Next-React-Components' : '',
     webpack: config => {
         // Fixes npm packages that depend on `fs` module
         config.node = {
@@ -16,6 +20,5 @@ module.exports = {
 
         return config
     },
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/mai-te-rang' : '',
-    ...withCss()
+    ...css,
 }
