@@ -31,8 +31,9 @@ function onChange(a, b, c) {
 export default () => (
     <NextLayout>
         <Layout>
-        <Header>
-        </Header>
+        <Head>
+            
+        </Head>
         <Content>
             <Container>
                 <div className="container">
