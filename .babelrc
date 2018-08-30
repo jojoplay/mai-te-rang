@@ -6,8 +6,13 @@
       "import",
       {
         "libraryName": "antd",
-        "style": "css"
+        "style": true
       }
-    ]
+    ],
+    ["module-resolver", {
+      "alias": {
+        "@app": "./"
+      }
+    }]
   ]
 }
