@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Form, Col, Row, Button, Layout, List, Avatar } from 'antd';
+import { Form, Col, Row, Button, Layout, List, Avatar, Carousel } from 'antd';
 import styled from 'styled-components';
 
 const FormItem = Form.Item
@@ -9,24 +9,24 @@ const Container = styled.div`
         
     @font-face {
         font-family: 'pridi';
-        src: url('static/fonts/pridi/pridi-bold-webfont.eot');
-        src: url('static/fonts/pridi/pridi-bold-webfont.eot?#iefix') format('embedded-opentype'),
-             url('static/fonts/pridi/pridi-bold-webfont.woff2') format('woff2'),
-             url('static/fonts/pridi/pridi-bold-webfont.woff') format('woff'),
-             url('static/fonts/pridi/pridi-bold-webfont.ttf') format('truetype'),
-             url('static/fonts/pridi/pridi-bold-webfont.svg#pridi') format('svg');
+        src: url('/static/fonts/pridi/pridi-bold-webfont.eot');
+        src: url('/static/fonts/pridi/pridi-bold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/static/fonts/pridi/pridi-bold-webfont.woff2') format('woff2'),
+             url('/static/fonts/pridi/pridi-bold-webfont.woff') format('woff'),
+             url('/static/fonts/pridi/pridi-bold-webfont.ttf') format('truetype'),
+             url('/static/fonts/pridi/pridi-bold-webfont.svg#pridi') format('svg');
         font-weight: 700;
         font-style: normal;
     }
    
     @font-face {
         font-family: 'pridi';
-        src: url('static/fonts/pridi/pridi-extralight-webfont.eot');
-        src: url('static/fonts/pridi/pridi-extralight-webfont.eot?#iefix') format('embedded-opentype'),
-             url('static/fonts/pridi/pridi-extralight-webfont.woff2') format('woff2'),
-             url('static/fonts/pridi/pridi-extralight-webfont.woff') format('woff'),
-             url('static/fonts/pridi/pridi-extralight-webfont.ttf') format('truetype'),
-             url('static/fonts/pridi/pridi-extralight-webfont.svg#pridi') format('svg');
+        src: url('/static/fonts/pridi/pridi-extralight-webfont.eot');
+        src: url('/static/fonts/pridi/pridi-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/static/fonts/pridi/pridi-extralight-webfont.woff2') format('woff2'),
+             url('/static/fonts/pridi/pridi-extralight-webfont.woff') format('woff'),
+             url('/static/fonts/pridi/pridi-extralight-webfont.ttf') format('truetype'),
+             url('/static/fonts/pridi/pridi-extralight-webfont.svg#pridi') format('svg');
         font-weight: ​200;
         font-style: normal;
     
@@ -34,24 +34,24 @@ const Container = styled.div`
 
     @font-face {
         font-family: 'pridi';
-        src: url('static/fonts/pridi/pridi-light-webfont.eot');
-        src: url('static/fonts/pridi/pridi-light-webfont.eot?#iefix') format('embedded-opentype'),
-             url('static/fonts/pridi/pridi-light-webfont.woff2') format('woff2'),
-             url('static/fonts/pridi/pridi-light-webfont.woff') format('woff'),
-             url('static/fonts/pridi/pridi-light-webfont.ttf') format('truetype'),
-             url('static/fonts/pridi/pridi-light-webfont.svg#pridi') format('svg');
+        src: url('/static/fonts/pridi/pridi-light-webfont.eot');
+        src: url('/static/fonts/pridi/pridi-light-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/static/fonts/pridi/pridi-light-webfont.woff2') format('woff2'),
+             url('/static/fonts/pridi/pridi-light-webfont.woff') format('woff'),
+             url('/static/fonts/pridi/pridi-light-webfont.ttf') format('truetype'),
+             url('/static/fonts/pridi/pridi-light-webfont.svg#pridi') format('svg');
         font-weight: 300;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'pridi';
-        src: url('static/fonts/pridi/pridi-medium-webfont.eot');
-        src: url('static/fonts/pridi/pridi-medium-webfont.eot?#iefix') format('embedded-opentype'),
-             url('static/fonts/pridi/pridi-medium-webfont.woff2') format('woff2'),
-             url('static/fonts/pridi/pridi-medium-webfont.woff') format('woff'),
-             url('static/fonts/pridi/pridi-medium-webfont.ttf') format('truetype'),
-             url('static/fonts/pridi/pridi-medium-webfont.svg#pridi') format('svg');
+        src: url('/static/fonts/pridi/pridi-medium-webfont.eot');
+        src: url('/static/fonts/pridi/pridi-medium-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/static/fonts/pridi/pridi-medium-webfont.woff2') format('woff2'),
+             url('/static/fonts/pridi/pridi-medium-webfont.woff') format('woff'),
+             url('/static/fonts/pridi/pridi-medium-webfont.ttf') format('truetype'),
+             url('/static/fonts/pridi/pridi-medium-webfont.svg#pridi') format('svg');
         font-weight: 400;
         font-style: normal;
     
@@ -59,12 +59,12 @@ const Container = styled.div`
 
     @font-face {
         font-family: 'pridi';
-        src: url('static/fonts/pridi/pridi-regular-webfont.eot');
-        src: url('static/fonts/pridi/pridi-regular-webfont.eot?#iefix') format('embedded-opentype'),
-             url('static/fonts/pridi/pridi-regular-webfont.woff2') format('woff2'),
-             url('static/fonts/pridi/pridi-regular-webfont.woff') format('woff'),
-             url('static/fonts/pridi/pridi-regular-webfont.ttf') format('truetype'),
-             url('static/fonts/pridi/pridi-regular-webfont.svg#pridi') format('svg');
+        src: url('/static/fonts/pridi/pridi-regular-webfont.eot');
+        src: url('/static/fonts/pridi/pridi-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/static/fonts/pridi/pridi-regular-webfont.woff2') format('woff2'),
+             url('/static/fonts/pridi/pridi-regular-webfont.woff') format('woff'),
+             url('/static/fonts/pridi/pridi-regular-webfont.ttf') format('truetype'),
+             url('/static/fonts/pridi/pridi-regular-webfont.svg#pridi') format('svg');
         font-weight: 500;
         font-style: normal;
     
@@ -72,12 +72,12 @@ const Container = styled.div`
 
     @font-face {
         font-family: 'pridi';
-        src: url('static/fonts/pridi/pridi-semibold-webfont.eot');
-        src: url('static/fonts/pridi/pridi-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-             url('static/fonts/pridi/pridi-semibold-webfont.woff2') format('woff2'),
-             url('static/fonts/pridi/pridi-semibold-webfont.woff') format('woff'),
-             url('static/fonts/pridi/pridi-semibold-webfont.ttf') format('truetype'),
-             url('static/fonts/pridi/pridi-semibold-webfont.svg#pridi') format('svg');
+        src: url('/static/fonts/pridi/pridi-semibold-webfont.eot');
+        src: url('/static/fonts/pridi/pridi-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/static/fonts/pridi/pridi-semibold-webfont.woff2') format('woff2'),
+             url('/static/fonts/pridi/pridi-semibold-webfont.woff') format('woff'),
+             url('/static/fonts/pridi/pridi-semibold-webfont.ttf') format('truetype'),
+             url('/static/fonts/pridi/pridi-semibold-webfont.svg#pridi') format('svg');
         font-weight: 600;
         font-style: normal;
     }
@@ -145,6 +145,11 @@ const datalist = [
         title: 'พร้อมใบเบิกทาง หมดปัญหาด้านขนส่ง',
     },
 ];
+
+function onChange(a, b, c) {
+    console.log(a, b, c);
+}
+
 export default () => (
     <Layout>
         <Header>
@@ -171,7 +176,7 @@ export default () => (
                                         <List.Item.Meta
                                             avatar={<Avatar size="large" icon="user"/>}
                                             title={<a href="https://ant.design">{item.title}</a>}
-                                            description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+                                            // description="Ant Design, a design language for background applications, is refined by Ant UED Team"
                                         />
                                     </List.Item>
                                 )}
@@ -188,6 +193,13 @@ export default () => (
 
                             ไม้มุมแบบมีร่อง หน้า 6 นิ้ว ราคา ตัวละ 25 บาท
                             หน้า 8 นิ้ว ราคา ตัวละ 28 บาท
+
+                            <Carousel afterChange={onChange}>
+                                <div><h3>1</h3></div>
+                                <div><h3>2</h3></div>
+                                <div><h3>3</h3></div>
+                                <div><h3>4</h3></div>
+                            </Carousel>,
 
                         </Col>
                     </Row>
