@@ -104,19 +104,24 @@ export default () => (
     <NextLayout>
         <Layout>
         <Head>
-            
+
         </Head>
         <Content>
+
             <Container>
+
                 <div className="container">
                     <img className="img-fluid" src={HeaderImage} alt=""/>
                     <Row gutter={16}>
                         <Col xs={24}>
 
-                            <h1 style={{fontSize: "40px"}} className="text-center m-large">ไม้ตีรัง บ้านนก ราคาถูก</h1>
+                            <h1 style={{fontSize: "40px"}} className="text-center m-large contact-box">ไม้ตีรัง บ้านนก ราคาถูก</h1>
 
                             <h2>(เราเป็นโรงไม้นำเข้าไม้จากต่างประเทศ)</h2>
-
+                            <h4>
+                                บริษัท นราว์ดแลนด์
+                                699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี บุญอนันต์ เป็นเวลามากกว่า 30 ปี
+                            </h4>
 
 
                             <List
@@ -179,8 +184,7 @@ export default () => (
                         <Col xs={6}/>
 
                     </Row>
-                    บริษัท นราว์ดแลนด์
-                    699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี บุญอนันต์ เป็นเวลามากกว่า 30 ปี
+
 
                     <Row>
                         <Col xs={24} sm={12}>
@@ -226,9 +230,9 @@ export default () => (
 
 
 
-            Footer
-            592d14 น้ำตาล
-            ส้ม ee5c36
+            {/*Footer*/}
+            {/*592d14 น้ำตาล*/}
+            {/*ส้ม ee5c36*/}
             Icon made by Freepik from www.flaticon.com
 
 
