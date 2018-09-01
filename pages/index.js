@@ -121,16 +121,21 @@ export default () => (
                                 699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี บุญอนันต์ เป็นเวลามากกว่า 30 ปี
                             </h4>
 
+                            <div className="d-block d-sm-none contact-box m-large">
+                                สอบถามราคาโปรโมชันได้ที่<br/>
+                                คุณโกโก้ 096-542-4144 หรือ
+                                ID line kokokookai
+                            </div>
 
                             <List
-                                grid={{ gutter: 16, xs: 1, sm: 22, md: 2, lg: 2, xl: 4, xxl: 4 }}
+                                grid={{ gutter: 10, xs: 1, sm: 2, md: 2, lg: 2, xl: 4, xxl: 4 }}
                                 itemLayout="horizontal"
                                 dataSource={slogan}
                                 size="large"
                                 renderItem={(item, index) => (
                                     <List.Item>
                                         <Card title={item.title}
-                                              cover={<img alt="example" src={item.slogan} />}
+                                              cover={<img alt={item.title} src={item.slogan} />}
                                         >
 
                                             <Card.Meta
@@ -138,11 +143,6 @@ export default () => (
                                                 description={item.desc}
                                             />
                                             </Card>
-                                        {/*<List.Item.Meta*/}
-                                            {/*avatar={<Icon type="check-circle-o" />}*/}
-                                            {/*title={<h2>{item.title}</h2>}*/}
-                                            {/*// description="Ant Design, a design language for background applications, is refined by Ant UED Team"*/}
-                                        {/*/>*/}
                                     </List.Item>
                                 )}
                             />
@@ -164,7 +164,7 @@ export default () => (
 
 
 
-                            <div className="contact-box m-large">
+                            <div className="contact-box m-large d-none d-sm-block">
                                 สอบถามราคาโปรโมชันได้ที่<br/>
                                 คุณโกโก้ 096-542-4144 หรือ
                                 ID line kokokookai

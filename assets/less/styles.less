@@ -21,6 +21,14 @@ body, * {
   height: auto;
 }
 
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
 .text-right {
   text-align: right;
 }
@@ -47,7 +55,8 @@ body, * {
 .trinangle-left, .trinangle-right {
   position: relative;
 }
-.trinangle-left:before{
+
+.trinangle-left:before {
   content: "";
   position: absolute;
   left: -15px;
@@ -75,6 +84,22 @@ body, * {
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -83,9 +108,9 @@ body, * {
   .container-header {
     max-width: 1140px;
   }
-
-
 }
+
+// Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
   .container {
@@ -96,19 +121,31 @@ body, * {
     max-width: 1000px;
   }
 
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
 }
+
 .footer {
   background-color: #592d14;
   opacity: 0.8;
 }
+
 .container, .container-header {
   margin-right: auto;
   margin-left: auto;
   background-color: #fff;
 }
+
 .px-15px {
   padding: 0 15px;
 }
+
 .ant-layout {
   background: #613b25;
 }
