@@ -7,7 +7,7 @@
     "preexport": "yarn build",
     "export": "next export",
     "predeploy": "yarn export",
-    "deploy": "gh-pages -d out"
+    "deploy": "node deploy"
   },
   "dependencies": {
     "@zeit/next-less": "0.3.0",
