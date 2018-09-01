@@ -1,26 +1,13 @@
 import React, {Component} from 'react';
+import Line from '@app/assets/images/btnaddfriend.png'
 
 class LineButton extends Component {
 
-    componentDidMount () {
-        console.log("dd")
-        const script = document.createElement("script");
-
-        script.src = "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js";
-        script.async = "async";
-        script.defer = "defer";
-
-        document.body.appendChild(script);
-    }
     render() {
         return (
-            <div className="line-it-button"
-                 data-lang="en"
-                 data-type="friend"
-                 data-lineid="kokokookai"
-                 data-count="true"
-                 data-home="true"
-                 style={{display: "none"}}></div>
+            <a href="http://line.me/ti/p/~kokokookai" className="line-btn text-center">
+                <img src={Line} alt="kokokookai" className="img-fluid" style={{maxWidth: "180px"}}/>
+            </a>
         )
     }
 }

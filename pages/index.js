@@ -4,6 +4,7 @@ import LineButton from '@app/components/LineButton'
 import { Form, Col, Row, Button, Layout, List, Avatar, Carousel, Card, Icon } from 'antd';
 import styled from 'styled-components';
 import HeaderImage from '@app/assets/images/header.jpg'
+import HeaderMobileImage from '@app/assets/images/header-mobile.jpg'
 import list from '@app/assets/images/list.jpg'
 import price from '@app/assets/images/price.jpg'
 import hero1 from '@app/assets/images/hero/bannokdotcom-1.jpg'
@@ -94,9 +95,6 @@ const priceList = [
     },
 ];
 
-{/*<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>*/}
-
-
 export default () => (
     <NextLayout>
         <Layout>
@@ -106,8 +104,9 @@ export default () => (
         <Content>
 
             <Container>
-                <div className="container-header px-15px">
-                    <img className="img-fluid" src={HeaderImage} alt=""/>
+                <div className="container-header">
+                    <img className="img-fluid d-none d-sm-block" src={HeaderImage} alt=""/>
+                    <img className="img-fluid d-block d-sm-none" src={HeaderMobileImage} alt=""/>
                     <div className="trinangle-left"></div>
                     <div className="trinangle-right"></div>
 
@@ -116,11 +115,11 @@ export default () => (
                     <Row gutter={16}>
                         <Col xs={24}>
 
-                            <h1 style={{fontSize: "40px"}} className="text-center m-large contact-box">ไม้ตีรัง บ้านนก ราคาถูก</h1>
+                            <h1 className="text-center m-large primary">
+                                ไม้ตีรัง บ้านนก ราคาถูก <LineButton/>
+                            </h1>
 
-                            <h2>เราเป็นโรงไม้นำเข้าไม้จากต่างประเทศ</h2>
-
-                            <LineButton/>
+                            เราเป็นโรงไม้นำเข้าไม้จากต่างประเทศ
 
                             <h4>
                                 บริษัท นราว์ดแลนด์
@@ -132,6 +131,21 @@ export default () => (
                                 คุณโกโก้ 096-542-4144 หรือ
                                 ID line kokokookai
                             </div>
+
+                            <List
+                                itemLayout="horizontal"
+                                dataSource={priceList}
+                                size="large"
+                                renderItem={item => (
+                                    <List.Item>
+                                        <List.Item.Meta
+                                            avatar={<Avatar src={list} />}
+                                            title={<span style={{ fontSize: "20px"}}>{item.title}</span>}
+                                            // description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+                                        />
+                                    </List.Item>
+                                )}
+                            />
 
                             <List
                                 grid={{ gutter: 10, xs: 1, sm: 2, md: 2, lg: 2, xl: 4, xxl: 4 }}
@@ -153,20 +167,7 @@ export default () => (
                                 )}
                             />
 
-                            <List
-                                itemLayout="horizontal"
-                                dataSource={priceList}
-                                size="large"
-                                renderItem={item => (
-                                    <List.Item>
-                                        <List.Item.Meta
-                                            avatar={<Avatar src={list} />}
-                                            title={<span style={{ fontSize: "20px"}}>{item.title}</span>}
-                                            // description="Ant Design, a design language for background applications, is refined by Ant UED Team"
-                                        />
-                                    </List.Item>
-                                )}
-                            />
+
 
 
 
