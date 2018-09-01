@@ -94,12 +94,6 @@ const priceList = [
 ];
 
 
-
-
-
-
-
-
 export default () => (
     <NextLayout>
         <Layout>
@@ -177,16 +171,16 @@ export default () => (
                     </Row>
 
                     <Row>
-                        <Col xs={6}/>
-                        <Col xs={10}>
+                        <Col xs={0} sm={6} md={5} lg={5} xl={6}/>
+                        <Col xs={24} sm={12} md={14} lg={14} xl={12}>
                             <img className="img-fluid" src={price} alt="ราคา"/>
                         </Col>
-                        <Col xs={6}/>
+                        <Col xs={0} sm={6} md={5} lg={5} xl={6}/>
 
                     </Row>
 
 
-                    <Row>
+                    <Row gutter={15} style={{ paddingTop: "15px" }}>
                         <Col xs={24} sm={12}>
                             <img className="img-fluid" src={hero3} alt=""/>
                         </Col>
@@ -194,9 +188,9 @@ export default () => (
                             <img className="img-fluid" src={hero4} alt=""/>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row gutter={15} className="py-15px">
                         <Col xs={24} sm={12} md={8}>
-                            <Carousel {...settings} afterChange={onChange} >
+                            <Carousel {...settings} afterChange={onChange} autoplay>
                                 <div><img className="img-fluid" src={lot1Pic1} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic2} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic3} alt=""/></div>
@@ -204,7 +198,7 @@ export default () => (
                             </Carousel>
                         </Col>
                         <Col xs={24} sm={12} md={8}>
-                            <Carousel {...settings} afterChange={onChange} >
+                            <Carousel {...settings} afterChange={onChange} autoplay>
                                 <div><img className="img-fluid" src={lot1Pic5} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic6} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic7} alt=""/></div>
@@ -213,7 +207,7 @@ export default () => (
                             </Carousel>
                         </Col>
                         <Col xs={24} sm={12} md={8}>
-                            <Carousel {...settings} afterChange={onChange} >
+                            <Carousel {...settings} afterChange={onChange} autoplay>
                                 <div><img className="img-fluid" src={lot1Pic9} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic10} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic11} alt=""/></div>

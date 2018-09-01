@@ -6,6 +6,11 @@ body, * {
   font-family: 'pridi';
 }
 
+.py-15px {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -22,7 +27,7 @@ body, * {
   background: #ef6136;
   padding: 10px;
   text-align: center;
-  border: 4px solid;
+  //border: 4px solid;
   border-radius: 10px;
 }
 
@@ -43,10 +48,26 @@ body, * {
 }
 
 .container {
-  // width: 100%;
-  // padding-right: 15px;
-  // padding-left: 15px;
   margin-right: auto;
-
   margin-left: auto;
+  padding: 0 15px;
+  background-color: #fff;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #fff;
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.ant-carousel .slick-dots li button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.ant-carousel .slick-dots {
+  bottom: 28px;
 }
