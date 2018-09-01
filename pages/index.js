@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import NextLayout from '@app/components/Layout'
+import LineButton from '@app/components/LineButton'
 import { Form, Col, Row, Button, Layout, List, Avatar, Carousel, Card, Icon } from 'antd';
 import styled from 'styled-components';
 import HeaderImage from '@app/assets/images/header.jpg'
@@ -93,6 +94,8 @@ const priceList = [
     },
 ];
 
+{/*<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>*/}
+
 
 export default () => (
     <NextLayout>
@@ -116,6 +119,9 @@ export default () => (
                             <h1 style={{fontSize: "40px"}} className="text-center m-large contact-box">ไม้ตีรัง บ้านนก ราคาถูก</h1>
 
                             <h2>เราเป็นโรงไม้นำเข้าไม้จากต่างประเทศ</h2>
+
+                            <LineButton/>
+
                             <h4>
                                 บริษัท นราว์ดแลนด์
                                 699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี บุญอนันต์ เป็นเวลามากกว่า 30 ปี
@@ -155,7 +161,7 @@ export default () => (
                                     <List.Item>
                                         <List.Item.Meta
                                             avatar={<Avatar src={list} />}
-                                            title={<h2>{item.title}</h2>}
+                                            title={<span style={{ fontSize: "20px"}}>{item.title}</span>}
                                             // description="Ant Design, a design language for background applications, is refined by Ant UED Team"
                                         />
                                     </List.Item>
@@ -174,16 +180,6 @@ export default () => (
                         </Col>
                     </Row>
 
-                    <Row>
-                        <Col xs={0} sm={6} md={5} lg={5} xl={6}/>
-                        <Col xs={24} sm={12} md={14} lg={14} xl={12}>
-                            <img className="img-fluid" src={price} alt="ราคา"/>
-                        </Col>
-                        <Col xs={0} sm={6} md={5} lg={5} xl={6}/>
-
-                    </Row>
-
-
                     <Row gutter={15} style={{ paddingTop: "15px" }}>
                         <Col xs={24} sm={12}>
                             <img className="img-fluid" src={hero3} alt=""/>
@@ -194,7 +190,7 @@ export default () => (
                     </Row>
                     <Row gutter={15} className="py-15px">
                         <Col xs={24} sm={12} md={8}>
-                            <Carousel {...settings} afterChange={onChange} autoplay>
+                            <Carousel {...settings} autoplay>
                                 <div><img className="img-fluid" src={lot1Pic1} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic2} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic3} alt=""/></div>
@@ -202,7 +198,7 @@ export default () => (
                             </Carousel>
                         </Col>
                         <Col xs={24} sm={12} md={8}>
-                            <Carousel {...settings} afterChange={onChange} autoplay>
+                            <Carousel {...settings} autoplay>
                                 <div><img className="img-fluid" src={lot1Pic5} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic6} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic7} alt=""/></div>
@@ -211,7 +207,7 @@ export default () => (
                             </Carousel>
                         </Col>
                         <Col xs={24} sm={12} md={8}>
-                            <Carousel {...settings} afterChange={onChange} autoplay>
+                            <Carousel {...settings} autoplay>
                                 <div><img className="img-fluid" src={lot1Pic9} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic10} alt=""/></div>
                                 <div><img className="img-fluid" src={lot1Pic11} alt=""/></div>
