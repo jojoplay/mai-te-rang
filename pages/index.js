@@ -103,15 +103,19 @@ export default () => (
         <Content>
 
             <Container>
-
-                <div className="container">
+                <div className="container-header px-15px">
                     <img className="img-fluid" src={HeaderImage} alt=""/>
+                    <div className="trinangle-left"></div>
+                    <div className="trinangle-right"></div>
+
+                </div>
+                <div className="container px-15px">
                     <Row gutter={16}>
                         <Col xs={24}>
 
                             <h1 style={{fontSize: "40px"}} className="text-center m-large contact-box">ไม้ตีรัง บ้านนก ราคาถูก</h1>
 
-                            <h2>(เราเป็นโรงไม้นำเข้าไม้จากต่างประเทศ)</h2>
+                            <h2>เราเป็นโรงไม้นำเข้าไม้จากต่างประเทศ</h2>
                             <h4>
                                 บริษัท นราว์ดแลนด์
                                 699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี บุญอนันต์ เป็นเวลามากกว่า 30 ปี
@@ -161,8 +165,8 @@ export default () => (
 
 
                             <div className="contact-box m-large">
-                                สอบถามราคาโปรโมชันได้ที่
-                                คุณโกโก้ 096-542-4144
+                                สอบถามราคาโปรโมชันได้ที่<br/>
+                                คุณโกโก้ 096-542-4144 หรือ
                                 ID line kokokookai
                             </div>
 
@@ -220,16 +224,12 @@ export default () => (
                 </div>
             </Container>
         </Content>
-        <Footer>
-
-
-
-            {/*Footer*/}
-            {/*592d14 น้ำตาล*/}
-            {/*ส้ม ee5c36*/}
-            Icon made by Freepik from www.flaticon.com
-
-
+        <Footer className="footer">
+            <Row>
+                <Col xs={12}>Copyright © 2018 Bannok.com</Col>
+                <Col xs={12} className="text-right"><h6>Icon made by Freepik from www.flaticon.com</h6></Col>
+            </Row>
+            บริษัท นราว์ดแลนด์ 699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี บุญอนันต์ เป็นเวลามากกว่า 30 ปี
         </Footer>
     </Layout>
     </NextLayout>

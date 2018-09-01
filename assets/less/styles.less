@@ -2,6 +2,11 @@
 @import "./antd-custom.less";
 @import "./fonts.less";
 
+//
+//{/*Footer*/}
+//{/*592d14 น้ำตาล*/}
+//{/*ส้ม ee5c36*/}
+
 body, * {
   font-family: 'pridi';
 }
@@ -14,6 +19,10 @@ body, * {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .m-large {
@@ -35,23 +44,73 @@ body, * {
   text-align: center;
 }
 
+.trinangle-left, .trinangle-right {
+  position: relative;
+}
+.trinangle-left:before{
+  content: "";
+  position: absolute;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 30px 0;
+  border-color: transparent #ffffff transparent transparent;
+  line-height: 0px;
+  _border-color: #000000 #ffffff #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+.trinangle-right:before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 0;
+  border-color: #ffffff transparent transparent transparent;
+  line-height: 0px;
+  _border-color: #ffffff #000000 #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
+
+  .container-header {
+    max-width: 1140px;
+  }
+
+
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
-}
 
-.container {
+  .container-header {
+    max-width: 1000px;
+  }
+
+}
+.footer {
+  background-color: #592d14;
+  opacity: 0.8;
+}
+.container, .container-header {
   margin-right: auto;
   margin-left: auto;
-  padding: 0 15px;
   background-color: #fff;
+}
+.px-15px {
+  padding: 0 15px;
+}
+.ant-layout {
+  background: #613b25;
 }
 
 .ant-carousel .slick-dots li.slick-active button {
