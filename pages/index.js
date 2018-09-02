@@ -91,8 +91,8 @@ export default () => (
                     <div className="container-header">
                         <img className="img-fluid d-none d-sm-block" src={HeaderImage} alt=""/>
                         <img className="img-fluid d-block d-sm-none" src={HeaderMobileImage} alt=""/>
-                        <div className="trinangle-left d-sm-none"></div>
-                        <div className="trinangle-right d-sm-none"></div>
+                        <div className="trinangle-left d-none d-md-block"></div>
+                        <div className="trinangle-right d-none d-md-block"></div>
 
                     </div>
                     <div className="container px-15px">
@@ -175,7 +175,7 @@ export default () => (
 
                         <Row gutter={15} style={{paddingTop: "15px"}}>
                             <Col xs={24} sm={12}>
-                                <img className="img-fluid" src={hero1} alt=""/>
+                                <img className="img-fluid pb-xs-15px" src={hero1} alt=""/>
                             </Col>
                             <Col xs={24} sm={12}>
                                 <img className="img-fluid" src={hero2} alt=""/>
@@ -183,7 +183,7 @@ export default () => (
                         </Row>
                         <Row gutter={15} style={{paddingTop: "15px"}}>
                             <Col xs={24} sm={12}>
-                                <img className="img-fluid" src={hero3} alt=""/>
+                                <img className="img-fluid pb-xs-15px" src={hero3} alt=""/>
                             </Col>
                             <Col xs={24} sm={12}>
                                 <img className="img-fluid" src={hero4} alt=""/>
@@ -192,10 +192,10 @@ export default () => (
                         <Row gutter={15} style={{paddingTop: "15px"}}>
 
                             <Col xs={24} sm={8}>
-                                <img className="img-fluid" src={hero5} alt=""/>
+                                <img className="img-fluid pb-xs-15px" src={hero5} alt=""/>
                             </Col>
                             <Col xs={24} sm={8}>
-                                <img className="img-fluid" src={hero6} alt=""/>
+                                <img className="img-fluid pb-xs-15px" src={hero6} alt=""/>
                             </Col>
                             <Col xs={24} sm={8}>
                                 <img className="img-fluid" src={hero7} alt=""/>

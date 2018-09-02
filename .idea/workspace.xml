@@ -3,29 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9dfe7f83-686b-4469-93b8-3367280a719e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-1.jpg" afterPath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-1.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-2.jpg" afterPath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-2.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-3.jpg" afterPath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-3.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-4.jpg" afterPath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-4.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-5.jpg" afterPath="$PROJECT_DIR$/assets/images/hero/bannokdotcom-5.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-1.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-1.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-10.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-10.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-11.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-11.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-12.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-12.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-14.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-14.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-15.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-16.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-2.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-2.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-3.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-3.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-4.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-4.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-5.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-5.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-6.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-6.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-7.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-7.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-8.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-8.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-9.jpg" afterPath="$PROJECT_DIR$/assets/images/lot1/bannokdotcom-9.jpg" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/untitled folder/bannokdotcom-1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/untitled folder/bannokdotcom-16.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/lot1/untitled folder/bannokdotcom-9.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/assets/less/styles.less" afterPath="$PROJECT_DIR$/assets/less/styles.less" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" afterPath="$PROJECT_DIR$/pages/index.js" />
     </list>
@@ -51,8 +28,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
+            <state relative-caret-position="253">
+              <caret line="94" column="67" lean-forward="false" selection-start-line="94" selection-start-column="67" selection-end-line="94" selection-end-column="67" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -73,8 +50,8 @@
       <file leaf-file-name="styles.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/less/styles.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2538">
-              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="130">
+              <caret line="120" column="24" lean-forward="false" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -105,8 +82,8 @@
     <findStrings>
       <find>hero1</find>
       <find>container-header</find>
-      <find>prima</find>
       <find>hero2</find>
+      <find>prima</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -238,12 +215,12 @@
       <workItem from="1535725843915" duration="6464000" />
       <workItem from="1535761118673" duration="237000" />
       <workItem from="1535776653070" duration="2733000" />
-      <workItem from="1535852107664" duration="4250000" />
+      <workItem from="1535852107664" duration="4684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28869000" />
+    <option name="totallyTimeSpent" value="29303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -568,14 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/less/styles.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2538">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/LineButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -584,10 +553,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/less/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="120" column="24" lean-forward="false" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
+        <state relative-caret-position="253">
+          <caret line="94" column="67" lean-forward="false" selection-start-line="94" selection-start-column="67" selection-end-line="94" selection-end-column="67" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
