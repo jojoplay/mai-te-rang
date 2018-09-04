@@ -118,30 +118,7 @@ export default () => (
                                                href="http://line.me/ti/p/~kokokookai"><u>kokokookai</u></a>
                                 </div>
 
-                                <div className="text-center p-medium">
-                                    <h2 className="primary">ไม้สยาแดง</h2>
-                                    <h3>หน้า 6 นิ้ว ราคา เมตรละ 90 บาท <br/>
-                                        หน้า 8 นิ้ว ราคา เมตรละ 110 บาท</h3>
-                                </div>
 
-                                <div className="text-center p-medium">
-                                    <h2 className="primary">ไม้สยาหิน</h2>
-                                    <h3>หน้า 6 นิ้ว ราคา เมตรละ 120 บาท<br/>
-                                        หน้า 8 นิ้ว ราคา เมตรละ 140 บาท</h3>
-                                    <h4>(ไม้สยาหินจะแข็งแรงกว่า ทนกว่า อายุการใช้งานจะนานกว่าไม้สยาแดง)</h4>
-                                </div>
-
-                                <div className="text-center p-medium">
-                                    <h2 className="primary">ไม้มุม</h2>
-                                    <h3>หน้า 6 นิ้ว ราคา ตัวละ 20 บาท<br/>
-                                        หน้า 8 นิ้ว ราคา ตัวละ 23 บาท</h3>
-                                </div>
-
-                                <div className="text-center p-medium">
-                                    <h2 className="primary">ไม้มุมแบบมีร่อง</h2>
-                                    <h3>หน้า 6 นิ้ว ราคา ตัวละ 25 บาท<br/>
-                                        หน้า 8 นิ้ว ราคา ตัวละ 28 บาท</h3>
-                                </div>
 
                                 <List
                                     grid={{gutter: 10, xs: 1, sm: 1, md: 4, lg: 4, xl: 4, xxl: 4}}
@@ -234,6 +211,31 @@ export default () => (
                         </Row>
 
 
+                    </div>
+
+                    <div className="text-center p-medium">
+                        <h2 className="primary">ไม้สยาแดง</h2>
+                        <h3>หน้า 6 นิ้ว ราคา เมตรละ 90 บาท <br/>
+                            หน้า 8 นิ้ว ราคา เมตรละ 110 บาท</h3>
+                    </div>
+
+                    <div className="text-center p-medium">
+                        <h2 className="primary">ไม้สยาหิน</h2>
+                        <h3>หน้า 6 นิ้ว ราคา เมตรละ 120 บาท<br/>
+                            หน้า 8 นิ้ว ราคา เมตรละ 140 บาท</h3>
+                        <h4>(ไม้สยาหินจะแข็งแรงกว่า ทนกว่า อายุการใช้งานจะนานกว่าไม้สยาแดง)</h4>
+                    </div>
+
+                    <div className="text-center p-medium">
+                        <h2 className="primary">ไม้มุม</h2>
+                        <h3>หน้า 6 นิ้ว ราคา ตัวละ 20 บาท<br/>
+                            หน้า 8 นิ้ว ราคา ตัวละ 23 บาท</h3>
+                    </div>
+
+                    <div className="text-center p-medium">
+                        <h2 className="primary">ไม้มุมแบบมีร่อง</h2>
+                        <h3>หน้า 6 นิ้ว ราคา ตัวละ 25 บาท<br/>
+                            หน้า 8 นิ้ว ราคา ตัวละ 28 บาท</h3>
                     </div>
 
                     <div className="text-center m-large">
