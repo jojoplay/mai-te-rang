@@ -7,6 +7,7 @@ import HeaderImage from '@app/assets/images/header.jpg'
 import HeaderMobileImage from '@app/assets/images/header-mobile.jpg'
 import list from '@app/assets/images/list.jpg'
 import price from '@app/assets/images/price.jpg'
+
 import hero1 from '@app/assets/images/hero/bannokdotcom-1.jpg'
 import hero2 from '@app/assets/images/hero/bannokdotcom-2.jpg'
 import hero3 from '@app/assets/images/hero/bannokdotcom-3.jpg'
@@ -14,24 +15,28 @@ import hero4 from '@app/assets/images/hero/bannokdotcom-4.jpg'
 import hero5 from '@app/assets/images/hero/bannokdotcom-5.jpg'
 import hero6 from '@app/assets/images/hero/bannokdotcom-6.jpg'
 import hero7 from '@app/assets/images/hero/bannokdotcom-7.jpg'
-import lot1Pic1 from '@app/assets/images/lot1/bannokdotcom-1.jpg'
-import lot1Pic2 from '@app/assets/images/lot1/bannokdotcom-2.jpg'
-import lot1Pic3 from '@app/assets/images/lot1/bannokdotcom-3.jpg'
-import lot1Pic4 from '@app/assets/images/lot1/bannokdotcom-4.jpg'
-import lot1Pic5 from '@app/assets/images/lot1/bannokdotcom-5.jpg'
-import lot1Pic6 from '@app/assets/images/lot1/bannokdotcom-6.jpg'
-import lot1Pic7 from '@app/assets/images/lot1/bannokdotcom-7.jpg'
-import lot1Pic8 from '@app/assets/images/lot1/bannokdotcom-8.jpg'
-import lot1Pic9 from '@app/assets/images/lot1/bannokdotcom-9.jpg'
-import lot1Pic10 from '@app/assets/images/lot1/bannokdotcom-10.jpg'
-import lot1Pic11 from '@app/assets/images/lot1/bannokdotcom-11.jpg'
-import lot1Pic12 from '@app/assets/images/lot1/bannokdotcom-12.jpg'
-import lot1Pic13 from '@app/assets/images/lot1/bannokdotcom-13.jpg'
-import lot1Pic14 from '@app/assets/images/lot1/bannokdotcom-14.jpg'
+
+import slider1Pic1 from '@app/assets/images/slider1/bannokdotcom-1.jpg'
+import slider1Pic2 from '@app/assets/images/slider1/bannokdotcom-2.jpg'
+import slider1Pic3 from '@app/assets/images/slider1/bannokdotcom-3.jpg'
+import slider1Pic4 from '@app/assets/images/slider1/bannokdotcom-4.jpg'
+
+import slider2Pic1 from '@app/assets/images/slider2/bannokdotcom-1.jpg'
+import slider2Pic2 from '@app/assets/images/slider2/bannokdotcom-2.jpg'
+import slider2Pic3 from '@app/assets/images/slider2/bannokdotcom-3.jpg'
+import slider2Pic4 from '@app/assets/images/slider2/bannokdotcom-4.jpg'
+
+import slider3Pic1 from '@app/assets/images/slider3/bannokdotcom-1.jpg'
+import slider3Pic2 from '@app/assets/images/slider3/bannokdotcom-2.jpg'
+import slider3Pic3 from '@app/assets/images/slider3/bannokdotcom-3.jpg'
+import slider3Pic4 from '@app/assets/images/slider3/bannokdotcom-4.jpg'
+
 import slogan1 from '@app/assets/images/slogan/1.jpg'
 import slogan2 from '@app/assets/images/slogan/2.jpg'
 import slogan3 from '@app/assets/images/slogan/3.jpg'
 import slogan4 from '@app/assets/images/slogan/4.jpg'
+import Slider from "react-slick";
+
 
 const FormItem = Form.Item
 const {Header, Footer, Sider, Content} = Layout;
@@ -72,11 +77,14 @@ function onChange(a, b, c) {
 }
 
 const settings = {
-    dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    fade:true,
+    autoplay: true
 };
 
 export default () => (
@@ -89,6 +97,7 @@ export default () => (
 
                 <Container>
                     <div className="container-header">
+                        {/*TODO: HeaderMobileImage*/}
                         <img className="img-fluid d-none d-sm-block" src={HeaderImage} alt=""/>
                         <img className="img-fluid d-block d-sm-none" src={HeaderMobileImage} alt=""/>
                         <div className="trinangle-left d-none d-md-block"></div>
@@ -103,13 +112,11 @@ export default () => (
                                     ไม้ตีรัง บ้านนก ราคาถูก <LineButton/>
                                 </h1>
 
-                                เราเป็นโรงไม้นำเข้าไม้จากต่างประเทศ
 
-                                <h4>
-                                    บริษัท นราว์ดแลนด์
-                                    699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี
-                                    บุญอนันต์ เป็นเวลามากกว่า 30 ปี
-                                </h4>
+                                <h3>
+                                    บริษัท นราวู๊ดแลนด์ จำกัด  เราเป็นผู้นำเข้า และจัดจำหน่ายไม้ตีรัง และไม้ปิดมุม ด้วยประสบการณ์และความเชี่ยวชาญในวงการไม้มานานกว่า 30 ปี ทางเรามีความเข้าใจในการผลิตไม้ตีรัง ไม้ปิดมุมเป็นอย่างดี การันตีด้วยความไว้วางใจจากลูกค้าจำนวนมาก  และภายใต้การบริหารงานของคุณแม่ทรงศรี บุญอนันต์ ที่คัดสรรไม้คุณภาพจากประเทศมาเลเซีย มาอบใส เซาะร่อง ให้ตรงตามความต้องการของลูกค้าทุกรายละเอียด
+                                </h3>
+
 
                                 <div className="d-block d-sm-none contact-box m-large">
                                     สอบถามราคาโปรโมชันได้ที่<br/>
@@ -141,7 +148,15 @@ export default () => (
                                     )}
                                 />
 
-                                <div className="contact-box m-large d-none d-sm-block">
+
+                                <h3>
+                                    การเลือกไม้ตีรังเป็นเรื่องสำคัญมาก จากการทดสอบใช้ไม้ในประเทศอินโดนีเซีย มาเลเซีย และไทยพบว่านกแอ่นชื่นชอบและพอใจ ไม้Meranti wood หรือ สายหิน เพราะเป็นไม้เนื้อแข็งกลาง ไม่มีกลิ่น มีใย ทำให้น้ำลายนกแอ่นยึดติดเกาะได้ดี ลักษณะของไม้ตีรังที่ดี ต้องสะอาด แห้งสนิท ไม่มีเชื้อรา และฝุ่น ส่วนประโยชน์ของไม้ปิดมุม นอกจากความสวยงามของรังแล้ว จะเห็นได้ว่านกแอ่นคู่ใหม่มักจะตัดสินใจทำรังที่มุมก่อนเสมอ ถือเป็นเทคนิคการเพิ่มปริมาณประชากรนกแอ่นในบ้านนกได้เป็นอย่างดี
+                                </h3>
+
+                                <div className="text-center">
+                                    <LineButton/>
+                                </div>
+                                <div className="contact-box m-large d-sm-block">
                                     สอบถามราคาโปรโมชันได้ที่<br/>
                                     คุณโกโก้ <a style={{color: "#ffffff"}} href="tel: 096-542-4144"><u>096-542-4144</u></a> หรือ
                                     ID line <a style={{color: "#ffffff"}}
@@ -179,34 +194,32 @@ export default () => (
                             </Col>
                         </Row>
                         <Row gutter={15} className="py-15px">
-                            <Col xs={24} sm={12} md={8}>
-                                <Carousel {...settings}>
-                                    <div><img className="img-fluid" src={lot1Pic1} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic2} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic3} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic4} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic5} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic6} alt=""/></div>
-                                </Carousel>
+                            <Col xs={24} sm={24} md={8}>
+                                <Slider {...settings}>
+                                    <div><img className="img-fluid" src={slider1Pic1} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider1Pic2} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider1Pic3} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider1Pic4} alt=""/></div>
+
+                                </Slider>
                             </Col>
-                            <Col xs={24} sm={12} md={8}>
-                                <Carousel {...settings}>
-
-                                    <div><img className="img-fluid" src={lot1Pic7} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic8} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic9} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic10} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic11} alt=""/></div>
+                            <Col xs={24} sm={24} md={8}>
+                                <Slider {...settings}>
+                                    <div><img className="img-fluid" src={slider2Pic1} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider2Pic2} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider2Pic3} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider2Pic4} alt=""/></div>
 
 
-                                </Carousel>
+                                </Slider>
                             </Col>
-                            <Col xs={24} sm={12} md={8}>
-                                <Carousel {...settings}>
-                                    <div><img className="img-fluid" src={lot1Pic12} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic13} alt=""/></div>
-                                    <div><img className="img-fluid" src={lot1Pic14} alt=""/></div>
-                                </Carousel>
+                            <Col xs={24} sm={24} md={8}>
+                                <Slider {...settings}>
+                                    <div><img className="img-fluid" src={slider3Pic1} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider3Pic2} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider3Pic3} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider3Pic4} alt=""/></div>
+                                </Slider>
                             </Col>
                         </Row>
 
@@ -241,7 +254,13 @@ export default () => (
                     <div className="text-center m-large">
                         <h3 className="orange">แอดไลน์ หรือ โทรสอบถาม โปรโมชันพิเศษ ได้ที่</h3>
                         <h3><a href="tel: 096-542-4144">096-542-4144</a> หรือ</h3>
-                        ID line kokokookai <br/> คลิก <LineButton/>
+                        ID line kokokookai <br/>  <LineButton/>
+
+                        <a style={{ paddingLeft: "15px" }} href="https://web.facebook.com/%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%95%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%87-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%81-%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%96%E0%B8%B9%E0%B8%81-184800775644270/"
+                            target="_blank"
+                        >
+                            <Icon style={{ fontSize: "50px", verticalAlign: "middle", color: "#4267b2"}} type="facebook" theme="outlined" />
+                        </a>
                     </div>
                 </Container>
             </Content>
