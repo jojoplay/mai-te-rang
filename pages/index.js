@@ -72,10 +72,6 @@ const slogan = [
     },
 ];
 
-function onChange(a, b, c) {
-    console.log(a, b, c);
-}
-
 const settings = {
     arrows: true,
     infinite: true,
@@ -83,8 +79,7 @@ const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    fade:true,
-    autoplay: true
+    fade:true
 };
 
 export default () => (
