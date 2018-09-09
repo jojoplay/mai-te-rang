@@ -5,7 +5,7 @@ class LineButton extends Component {
 
     render() {
         return (
-            <a href="http://line.me/ti/p/~kokokookai" className="line-btn text-center">
+            <a href="https://line.me/ti/p/~kokokookai" className="line-btn text-center">
                 <img src={Line} alt="kokokookai" className="img-fluid" style={{maxWidth: "180px"}}/>
             </a>
         )

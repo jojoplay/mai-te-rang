@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import NextLayout from '@app/components/Layout'
 import LineButton from '@app/components/LineButton'
+import Analytics from '@app/components/Analytics'
 import { Form, Col, Row, Button, Layout, List, Avatar, Carousel, Card, Icon } from 'antd';
 import styled from 'styled-components';
 import HeaderImage from '@app/assets/images/header.jpg'
@@ -267,6 +268,7 @@ export default () => (
                 บริษัท นราว์ดแลนด์ 699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี
                 บุญอนันต์ เป็นเวลามากกว่า 30 ปี
             </Footer>
+            <Analytics />
         </Layout>
     </NextLayout>
 )
