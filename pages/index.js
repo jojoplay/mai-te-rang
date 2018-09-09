@@ -262,7 +262,7 @@ export default () => (
             </Content>
             <Footer className="footer">
                 <Row>
-                    <Col xs={12}>Copyright © 2018 Bannok.com</Col>
+                    <Col xs={12}>Copyright © 2018 baan-nok.com</Col>
                     <Col xs={12} className="text-right"><h6>Icon made by Freepik from www.flaticon.com</h6></Col>
                 </Row>
                 บริษัท นราว์ดแลนด์ 699/1 ถ.ประชาวิวัฒน์ สุไหงโกลก นราธิวาส 96120 ภายใต้การบริหารงานของคุณแม่ ทรงศรี
