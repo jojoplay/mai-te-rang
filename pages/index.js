@@ -44,6 +44,7 @@ const {Header, Footer, Sider, Content} = Layout;
 
 const Container = styled.div``;
 
+const defaultAlt = "ไม้ตีรัง บ้านนก ราคาถูก, สร้างบ้านนกนางแอ่น, ไม้ปิดมุม, นกนางแอ่น, ไม้สยาแดง, ไม้สยาหิน, ไม้มุม, ไม้มุมแบบมีร่อง";
 const slogan = [
     {
         title: 'ไม้ผ่านการอบ ',
@@ -163,58 +164,58 @@ export default () => (
 
                         <Row gutter={15} style={{paddingTop: "15px"}}>
                             <Col xs={24} sm={12}>
-                                <img className="img-fluid pb-xs-15px" src={hero1} alt=""/>
+                                <img className="img-fluid pb-xs-15px" src={hero1} alt={defaultAlt}/>
                             </Col>
                             <Col xs={24} sm={12}>
-                                <img className="img-fluid" src={hero2} alt=""/>
+                                <img className="img-fluid" src={hero2} alt={defaultAlt}/>
                             </Col>
                         </Row>
                         <Row gutter={15} style={{paddingTop: "15px"}}>
                             <Col xs={24} sm={12}>
-                                <img className="img-fluid pb-xs-15px" src={hero3} alt=""/>
+                                <img className="img-fluid pb-xs-15px" src={hero3} alt={defaultAlt}/>
                             </Col>
                             <Col xs={24} sm={12}>
-                                <img className="img-fluid" src={hero4} alt=""/>
+                                <img className="img-fluid" src={hero4} alt={defaultAlt}/>
                             </Col>
                         </Row>
                         <Row gutter={15} style={{paddingTop: "15px"}}>
 
                             <Col xs={24} sm={8}>
-                                <img className="img-fluid pb-xs-15px" src={hero5} alt=""/>
+                                <img className="img-fluid pb-xs-15px" src={hero5} alt={defaultAlt}/>
                             </Col>
                             <Col xs={24} sm={8}>
-                                <img className="img-fluid pb-xs-15px" src={hero6} alt=""/>
+                                <img className="img-fluid pb-xs-15px" src={hero6} alt={defaultAlt}/>
                             </Col>
                             <Col xs={24} sm={8}>
-                                <img className="img-fluid" src={hero7} alt=""/>
+                                <img className="img-fluid" src={hero7} alt={defaultAlt}/>
                             </Col>
                         </Row>
                         <Row gutter={15} className="py-15px">
                             <Col xs={24} sm={24} md={8}>
                                 <Slider {...settings}>
-                                    <div><img className="img-fluid" src={slider1Pic1} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider1Pic2} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider1Pic3} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider1Pic4} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider1Pic1} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider1Pic2} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider1Pic3} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider1Pic4} alt={defaultAlt}/></div>
 
                                 </Slider>
                             </Col>
                             <Col xs={24} sm={24} md={8}>
                                 <Slider {...settings}>
-                                    <div><img className="img-fluid" src={slider2Pic1} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider2Pic2} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider2Pic3} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider2Pic4} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider2Pic1} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider2Pic2} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider2Pic3} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider2Pic4} alt={defaultAlt}/></div>
 
 
                                 </Slider>
                             </Col>
                             <Col xs={24} sm={24} md={8}>
                                 <Slider {...settings}>
-                                    <div><img className="img-fluid" src={slider3Pic1} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider3Pic2} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider3Pic3} alt=""/></div>
-                                    <div><img className="img-fluid" src={slider3Pic4} alt=""/></div>
+                                    <div><img className="img-fluid" src={slider3Pic1} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider3Pic2} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider3Pic3} alt={defaultAlt}/></div>
+                                    <div><img className="img-fluid" src={slider3Pic4} alt={defaultAlt}/></div>
                                 </Slider>
                             </Col>
                         </Row>
