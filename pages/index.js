@@ -119,7 +119,7 @@ export default () => (
                                     สอบถามราคาโปรโมชันได้ที่<br/>
                                     คุณโกโก้ <a style={{color: "#ffffff"}} href="tel: 096-542-4144"><u>096-542-4144</u></a> หรือ
                                     ID line <a style={{color: "#ffffff"}}
-                                               href="http://line.me/ti/p/~kokokookai"><u>kokokookai</u></a>
+                                               href="http://line.me/ti/p/~@kokobaannok" target="_blank">@kokobaannok</a>
                                 </div>
 
 
@@ -157,7 +157,7 @@ export default () => (
                                     สอบถามราคาโปรโมชันได้ที่<br/>
                                     คุณโกโก้ <a style={{color: "#ffffff"}} href="tel: 096-542-4144"><u>096-542-4144</u></a> หรือ
                                     ID line <a style={{color: "#ffffff"}}
-                                               href="http://line.me/ti/p/~kokokookai"><u>kokokookai</u></a>
+                                               href="http://line.me/ti/p/~@kokobaannok" target="_blank">@kokobaannok</a>
                                 </div>
                             </Col>
                         </Row>
@@ -251,7 +251,7 @@ export default () => (
                     <div className="text-center m-large">
                         <h3 className="orange">แอดไลน์ หรือ โทรสอบถาม โปรโมชันพิเศษ ได้ที่</h3>
                         <h3><a href="tel: 096-542-4144">096-542-4144</a> หรือ</h3>
-                        ID line kokokookai <br/>  <LineButton/>
+                        ID line @kokobaannok <br/>  <LineButton/>
 
                         <a style={{ paddingLeft: "15px" }} href="https://web.facebook.com/%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%95%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%87-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%81-%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%96%E0%B8%B9%E0%B8%81-184800775644270/"
                             target="_blank"
