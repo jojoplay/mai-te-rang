@@ -11,7 +11,7 @@ if (typeof require !== 'undefined') {
   require.extensions['.less'] = (file) => {}
 }
 
-const assetPrefix = isProd ? '/mai-te-rang' : ''
+const assetPrefix = isProd ? '' : ''
 
 module.exports = withImages(withFonts(withLess({
   lessLoaderOptions: {
